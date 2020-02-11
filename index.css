@@ -10,12 +10,7 @@ body{
         font-size: 16px;
     }
 }
-section {
-    /* padding: 70px 0 70px 0; */
-    color: #616161;
-    line-height: 15px;
-    position: relative;
-}
+
  canvas{
     display:block;
     /* vertical-align:bottom; */
@@ -40,48 +35,37 @@ section {
 .panel {
     display: block;
     text-align: center;
+    margin: 17% auto;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
     position: absolute;
     z-index: 10;
-    width: 670px;
-    height: 244px;
+    width: 100%;
+    height: 35%;
     background: transparent;
-    top: 45%;
+    /* background-color: chartreuse; */
+    /* top: 45%;
     left: 35%;
     margin: -96px 0 0 -100px;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 4px; */
     box-sizing: border-box;
     z-index: 100;
     line-height: 48px;
 }
- @media (max-width: 1000px)
+@media (max-width: 700px)
 {
     .panel{
-        font-size: 35px;
-        width: 534px;
-        top: 40%;
-        left: 31%;
-        line-height: 40px;
+       margin: 30% auto;
     }
 } 
-@media (max-width: 600px)
-{
-    .panel{
-        font-size: 30px;
-        width: 534px;
-        top: 45%;
-        left: 13%;
-        line-height: 32px;
-    }
-}
+
 
 .highlight {
     color: #E31B6D;
     font-family: 'Raleway';
-    font-weight: bold;
+    font-weight: 700;
 }
 #viewmyprofile{
     margin-top: 20px;
@@ -101,43 +85,39 @@ section {
     border-color: #04C2C9;
     color: white;
 }
-/* .navbar-toggler-icon{
-    color: white;
-} */
-.fas{
-    /* right: 15px; */
-    position: absolute;
-    left: 407px;
-    top: 155px;
-}
-@media (max-width: 1000px)
-{
-    .fas{
-        left: 341px;
-        top: 138px;
-    }
 
+/* RIGHT ARROW ICON */
+
+.fas{
+    left: 15px;
+    position: relative;
 }
-@media (max-width: 600px)
-{
-    .fas
-    {
-        left: 337px;
-        top: 123px;
-    }
-}  
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+ /* NAVBAR CSS */
 nav {
     position: absolute;
     height: 50px;
     width: 100%;
     background: #1B242F;
-    border-bottom: 5px solid #04C2C9;
+    border-bottom: 6px solid #04C2C9;
     text-align: left;
-    z-index: 99;
+    /* z-index: 99; */
 }
 .navbar-expand .navbar-nav .nav-link {
     padding-right: 3rem;
     padding-left: 0.5rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+    /* font-size: 1rem; */
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #7eb444;
 }
 nav a{
     color: white;
@@ -148,22 +128,26 @@ nav a:hover{
     color: #E31B6D;
 }
 
-
+/* ----------------------------------------------------------------------------------------------------------------------------- */
 #about{
     text-align: center;
 }
-h2{
-    font-size: 42px;
+.titleofpage{
+    font-size: 2.5rem;
     font-family: 'raleway-bold';
     font-weight: 600;
     color: #444649;
-    border: 2px black; 
-    margin: 35px auto ;
+    /* border-bottom: 15px solid black; */
+    margin: 7% auto;
     
+}
+.about-content{
+    border: 2px solid black;
+    margin: 0 auto;
 }
 .hexagon-profile-pic{
     width: 288px;
-    height: 250px;
+    height: 330px;
     background: red;
     transform: rotate(120deg);
     margin: 25px auto;
@@ -181,24 +165,27 @@ h2{
     width: 100%;
     height: 100%;
     background-image: url('new.jpg');
-    background-position: center;
+    background-position: top;
     background-size: 120% 120%;
     transform: rotate(-60deg);
     visibility: visible;
   }
 
 .label {
-    margin: 0 0 15px 0;
-    font-size: 24px;
-    font-weight: 550;
+    margin: 0 ;
+    font-size: 1.5rem;
+    font-weight: 600;
     font-family: 'Raleway-bold';
 }
 #about .intro{
-    line-height: 16px;
+    line-height: 1.5rem;
+    text-align: center;
 }
-#about .highlight {
+.link-to-contact {
     color: #009ADA;
-    margin-top: 1px;
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 /* :horizontal bar chart ---------------------------------------*/
@@ -253,7 +240,9 @@ h2{
  }
  .bulletin-col{
     text-align: center;
-    margin: 0 auto;
+    
+    
+
  }
   #hexagon-bulletin {
     width: 100px;
