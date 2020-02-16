@@ -3,6 +3,8 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+    
 }  
 @media screen and (max-width: 600px)
 {
@@ -88,7 +90,7 @@ body{
 
 /* RIGHT ARROW ICON */
 
-.fas{
+#home .fas{
     left: 15px;
     position: relative;
 }
@@ -104,10 +106,7 @@ nav {
     text-align: left;
     /* z-index: 99; */
 }
-.navbar-expand .navbar-nav .nav-link {
-    padding-right: 3rem;
-    padding-left: 0.5rem;
-}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2rem;
     padding-left: 0.5rem;
@@ -128,7 +127,8 @@ nav a:hover{
     color: #E31B6D;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ABOUT ----------------------------------------------------------------------------------------------------------------------------- */
+
 #about{
     text-align: center;
 }
@@ -150,10 +150,18 @@ nav a:hover{
     height: 330px;
     background: red;
     transform: rotate(120deg);
-    margin: 25px auto;
+    margin: 5% auto;
     overflow: hidden;
     visibility: hidden;
-  }
+}
+@media screen and (max-width: 600px)
+{
+    .hexagon-profile-pic{
+        width: 230px;
+        height: 199px;
+    }
+}
+
   .hexagon-profilepic-inside{
     width: 100%;
     height: 100%;
@@ -282,4 +290,9 @@ nav a:hover{
     right: 0;
     z-index: 1;
     line-height: 0.2;
+}
+
+/* PROJECTS-------------------------------------------------------------------- */
+#projects .card-img-top{
+    height: 150px;
 }

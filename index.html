@@ -76,7 +76,7 @@
         <h2 class="titleofpage">ABOUT</h2>
     </div>
         
-     <div class="about-content row container-fluid"> 
+     <div class="about-content row container"> 
         <!-- PROFILE PHOTO -->
         <div class="col-md-6 col-sm-12 ">
             <div class="hexagon-profile-pic">
@@ -89,7 +89,7 @@
             <div class="intro"><p>I'm a 4th year student currently pursuing B.Tech in Computer Science from SRM Institute of Science and Technology, Chennai. <br>
                 I finished my high school from St. Xavier's School,Jaipur in 2016. <br>
                 I was born and brought up in Jaipur, Rajasthan. <br>
-                <br><span class="link-to-contact bold" dest="contact">Let's make something special.</span>
+                <br><span class="link-to-contact " dest="contact">Let's make something special.</span>
             </p></div>
         </div>
 
@@ -169,15 +169,91 @@
         </div> 
     </div>
 </section>
-<section id="projects">
+
+<!-- PROJECTS--------------------------------------------- -->
+ <section id="projects">
     <div class="container">
         <h2 class="titleofpage">PROJECTS</h2>
     </div>
+    <div class="container-fluid row d-flex flex-row justify-content-around  text-center">
+        <div class="card col-md-3 p-0 mx-3 my-3" style="width: 18rem;">
+          <img class="card-img-top" src="images/Key.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Keylogger</h4>
+            <p class="card-text">Advance keylogger built using cpp.The information recorded by the keylogger is encrypted.By any chance if user found out he/she will see only junk Custom encryption is used.</p>
+          </div>
+          <div class="card-footer text-muted d-flex justify-content-between">
+            <div><i class="fas fa-code"></i> C++</div>
+            <div><a href="https://github.com/gaurangvyas98/Keylogger-C-" target="_blank"><i class="fab fa-github"></i> Repository</a></div>
+          </div>
+        </div>
+        <div class="card col-md-3 p-0 mx-3 my-4" style="width: 18rem;">
+            <img class="card-img-top" src="images/rssfeeds.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">RSS Feeds</h4>
+              <p class="card-text">An Android Application to display news rss feeds and store data offline.</p>
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-between">
+              <div><i class="fas fa-code"></i> Android</div>
+              <div><a href="https://github.com/gaurangvyas98/Keylogger-C-" target="_blank"><i class="fab fa-github"></i> Repository</a></div>
+            </div>
+        </div>
+        <div class="card col-md-3 p-0 mx-3 my-4" style="width: 18rem;">
+            <img class="card-img-top" src="images/todowebapp.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Todo Web App</h4>
+              <p class="card-text">Todo List web application using MEAN stack.</p>
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-between">
+              <div><i class="fas fa-code"></i> Angular</div>
+              <div><a href="https://github.com/gaurangvyas98/To-Do-List" target="_blank"><i class="fab fa-github"></i> Repository</a></div>
+            </div>
+          </div>
+          <div class="card col-md-3 p-0 mx-3 my-4" style="width: 18rem;">
+            <img class="card-img-top" src="images/studentinfo.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Student Info Management System</h4>
+              <p class="card-text">A Core-Java Project on "Student Information Management System with Notice Board Facility" using Database(MySQL) and swing/awt components.</p>
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-between">
+              <div><i class="fas fa-code"></i> Java</div>
+              <div><a href="https://github.com/gaurangvyas98/Student-Information-Management-System" target="_blank"><i class="fab fa-github"></i> Repository</a></div>
+            </div>
+          </div>
+          <div class="card col-md-3 p-0 mx-3 my-4" style="width: 18rem;">
+            <img class="card-img-top" src="images/tictactoe.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Tic-Tac-Toe</h4>
+              <p class="card-text">JAVA GUI program for famous game Tic-Tac-Toe using swings/awt components.</p>
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-between">
+              <div><i class="fas fa-code"></i> Java</div>
+              <div><a href="https://github.com/gaurangvyas98/TicTacToe" target="_blank"><i class="fab fa-github"></i> Repository</a></div>
+            </div>
+          </div>
+        </div>
+    </div>
 </section>
+
+<!------------------ CONTACT----------------------------------------------- -->
 <section id="contact">
     <div class="container">
         <h2 class="titleofpage">CONTACT</h2>
     </div>
+    <div>
+        <p>Have a question or want to work together?</p>
+    </div>
+    <form >
+        <input placeholder="Name" type="text" name="name" required=""><br>
+        <input placeholder="Enter email" type="email" name="email" required=""><br>
+        <textarea placeholder="Your Message" type="text" name="message"></textarea><br>
+        <div id="success">
+          <div>
+            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+          </div>
+        </div>
+        <input class="button" type="submit" id="submit" value="SUBMIT">
+    </form>
 </section>
 <section id="resume">
     <div class="container">
